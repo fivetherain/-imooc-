@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div0{
+            width: 500px;
+            height: 500px;
+        }
+        #div0 div{
+            height: 200px;
+            float: left;
+        }
+        #div0 div:nth-child(1){
+            background-color: red;
+        }
+        #div0 div:nth-child(2){
+            background-color: rgb(17, 0, 255);
+        }
+        #div0 div:nth-child(3){
+            background-color: pink;
+        }
+        @media screen and (min-device-width : 700px){
+            #div0 div{
+                width:33.33%
+            }
+        }
+        @media screen and (min-device-width:500px) and (max-device-width:699px){
+            #div0 div{
+                width:50%
+            }
+        }
+        @media screen and (min-device-width:300px) and (max-device-width:499px){
+            #div0 div{
+                width:100%
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="div0">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
